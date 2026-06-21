@@ -1,3 +1,32 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/*=============== ⁡⁣⁢⁣BASE⁡ ===============*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+/*=============== ⁡⁣⁢⁣VARIABLES⁡ ===============*/
+:root {
+    --body-color: #000;
+}
+
+/*=============== ⁡⁣⁢⁣BODY⁡ ===============*/
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    user-select: none;
+    touch-action: pan-y;
+    background-color: var(--body-color);
+    -webkit-tap-highlight-color: transparent;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
