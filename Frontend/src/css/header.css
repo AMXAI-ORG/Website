@@ -18,14 +18,23 @@
 
 /* AMXAI Logo Typography */
 .amxai-logo {
-  font-size: 1.5rem;
-  font-weight: 900;
-  letter-spacing: 3px;
-  color: #ffffff;
-  font-family: system-ui, -apple-system, sans-serif;
+  display: flex;
+  align-items: center;
+  height: 50%;
 }
-.amxai-logo span {
-  color: #a855f7; /* Purple accent color for "AI" */
+
+/* Target the logo image specifically inside your navbar wrapper */
+.amxai-logo img {
+  height: 45px;         /* Sizing control matching your navbar height */
+  width: auto;
+  object-fit: contain;
+  background: transparent !important;
+  
+  /* 🔥 THE SECRET MAGIC CODE: Removes pure solid black backgrounds instantly */
+  mix-blend-mode: screen; 
+  
+  /* Premium purple drop shadow glow overlay to mask edges seamlessly */
+  filter: drop-shadow(0px 0px 12px rgba(168, 85, 247, 0.6));
 }
 
 /* Nav Menu Items */
