@@ -17,26 +17,23 @@
 }
 
 /* AMXAI Logo Typography */
+/* Logo Container */
 .amxai-logo {
   display: flex;
   align-items: center;
-  height: 50%;
+  height: 100%;
 }
 
-/* Target the logo image specifically inside your navbar wrapper */
-.amxai-logo img {
-  height: 45px;         /* Sizing control matching your navbar height */
+/* Logo Image */
+/* Logo Image */
+.amxai-logo-img {
+  height: 90px;        /* Increased from 50px to fit the 90px navbar better */
   width: auto;
+  display: block;
   object-fit: contain;
-  background: transparent !important;
-  
-  /* 🔥 THE SECRET MAGIC CODE: Removes pure solid black backgrounds instantly */
-  mix-blend-mode: screen; 
-  
-  /* Premium purple drop shadow glow overlay to mask edges seamlessly */
-  filter: drop-shadow(0px 0px 12px rgba(168, 85, 247, 0.6));
+  max-height: 100%;    /* Ensures it never overflows the container */
+  transform: scale(1.1); /* Optional: Slightly boosts the presence if the image asset has built-in transparent margins */
 }
-
 /* Nav Menu Items */
 .amxai-nav-links {
   display: flex;

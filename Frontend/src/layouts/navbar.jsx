@@ -7,7 +7,7 @@ export default function Navbar() {
     <nav className="amxai-navbar">
       {/* Coded Premium Text Logo */}
       <div className="amxai-logo">
-        <img src="/assets/img/L.png" alt="Logo" className="amxai-logo-img" />
+        <img src="/assets/img/k.png" alt="AMXAI Logo" className="amxai-logo-img" />
       </div>
 
       {/* Navigation Menu Links */}
