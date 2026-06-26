@@ -1,6 +1,6 @@
-import React from "react";
+import { Link } from "react-router-dom";
 import { ArrowUpRight } from "lucide-react";
-import "../css/header.css"; // Import the CSS file for styling
+import "../css/header.css";
 
 export default function Navbar() {
   return (
@@ -12,10 +12,10 @@ export default function Navbar() {
 
       {/* Navigation Menu Links */}
       <div className="amxai-nav-links">
-        <a href="#home" className="active">HOME</a>
-        <a href="#about">ABOUT</a>
-        <a href="#service">SERVICE</a>
-        <a href="#contact">CONTACT</a>
+        <Link to="/" className="active">HOME</Link>
+        <Link to="/about">ABOUT</Link>
+        <Link to="/service">SERVICE</Link>
+        <Link to="/contact">CONTACT</Link>
       </div>
 
       {/* Premium Outline Get In Touch Button */}

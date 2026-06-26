@@ -1,4 +1,4 @@
-.amxaiMasterShell {
+.amxai-master-shell {
     width: 100%;
     min-height: 100vh;
     position: relative;
@@ -10,7 +10,7 @@
     overflow-x: hidden;
 }
 
-.amxaiHeroViewport {
+.amxai-hero-viewport {
     width: 100%;
     height: 100vh;
     position: relative;
@@ -23,7 +23,7 @@
 }
 
 /* --- HERO TEXT CENTERING --- */
-.heroTextContainer {
+.hero-text-container {
     position: relative;
     z-index: 8;
     width: 100%;
@@ -35,28 +35,28 @@
     padding: 0 20px;
 }
 
-.heroSubcaps {
+.hero-subcaps {
     letter-spacing: 3px;
     font-size: 14px;
     color: #c084fc;
     margin: 0 0 12px 0;
 }
 
-.heroHeadline {
+.hero-headline {
     font-size: clamp(32px, 6vw, 72px);
     margin: 0;
     font-weight: 800;
     line-height: 1.1;
 }
 
-.heroTagline {
+.hero-tagline {
     font-size: clamp(14px, 2vw, 20px);
     margin: 16px 0 0 0;
     color: #d1c4e9;
 }
 
 /* --- EARTH POSITIONING --- */
-.macroEarthContainer {
+.macro-earth-container {
     position: absolute;
     bottom: -5rem;
     left: 50%;
@@ -69,14 +69,14 @@
     align-items: center;
 }
 
-.realEarthAsset {
+.real-earth-asset {
     width: 100%;
     height: 100%;
     object-fit: contain;
 }
 
 /* --- SCROLL INDICATOR CENTERING --- */
-.scrollIndicatorArrow {
+.scroll-indicator-arrow {
     position: absolute;
     bottom: 30px;
     left: 50%;
