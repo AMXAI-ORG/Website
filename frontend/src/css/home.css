@@ -1,0 +1,100 @@
+.amxai-master-shell {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    background-color: #05020c;
+    color: #ffffff;
+    font-family: sans-serif;
+    overflow-x: hidden;
+}
+
+.amxai-hero-viewport {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* --- HERO TEXT CENTERING --- */
+.hero-text-container {
+    position: relative;
+    z-index: 8;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero-subcaps {
+    letter-spacing: 3px;
+    font-size: 14px;
+    color: #c084fc;
+    margin: 0 0 12px 0;
+}
+
+.hero-headline {
+    font-size: clamp(32px, 6vw, 72px);
+    margin: 0;
+    font-weight: 800;
+    line-height: 1.1;
+}
+
+.hero-tagline {
+    font-size: clamp(14px, 2vw, 20px);
+    margin: 16px 0 0 0;
+    color: #d1c4e9;
+}
+
+/* --- EARTH POSITIONING --- */
+.macro-earth-container {
+    position: absolute;
+    bottom: -5rem;
+    left: 50%;
+    width: 100vw;
+    max-width: 80rem;
+    aspect-ratio: 1;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.real-earth-asset {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* --- SCROLL INDICATOR CENTERING --- */
+.scroll-indicator-arrow {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 8;
+    font-size: 24px;
+    color: #c084fc;
+    animation: bounceArrow 1.8s infinite;
+}
+
+@keyframes bounceArrow {
+
+    0%,
+    100% {
+        transform: translateX(-50%) translateY(0);
+    }
+
+    50% {
+        transform: translateX(-50%) translateY(10px);
+    }
+}
