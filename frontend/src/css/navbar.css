@@ -1,0 +1,86 @@
+.amxai-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 6%;
+  height: 90px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 100;
+  background-color: rgba(4, 2, 9, 0.75);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(168, 85, 247, 0.08);
+}
+
+/* Logo Container */
+.amxai-logo {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+/* Logo Image */
+.amxai-logo-img {
+  height: 90px;
+  width: auto;
+  display: block;
+  object-fit: contain;
+  max-height: 100%;
+  transform: scale(1.1);
+}
+
+/* Nav Menu Items */
+.amxai-nav-links {
+  display: flex;
+  gap: 30px;
+}
+
+.amxai-nav-links a {
+  color: #94a3b8;
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+  font-family:
+    system-ui,
+    -apple-system,
+    sans-serif;
+}
+
+.amxai-nav-links a:hover,
+.amxai-nav-links a.active {
+  color: #ffffff;
+}
+
+/* Get in Touch Button */
+.amxai-touch-btn {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+  padding: 10px 24px;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family:
+    system-ui,
+    -apple-system,
+    sans-serif;
+}
+
+.amxai-touch-btn:hover {
+  background: #a855f7;
+  color: #040209;
+  border-color: transparent;
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.2);
+}

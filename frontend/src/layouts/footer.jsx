@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
     return (
-        <footer className="relative text-white bg-[url('/assets/img/wp.png')] bg-cover bg-center bg-no-repeat">
+        <footer className="relative text-white bg-[url('/assets/img/worldMap.png')] bg-cover bg-center bg-no-repeat">
 
             {/* Overlay */}
             <div className="absolute inset-0 bg-slate-950/70"></div>
@@ -11,7 +11,7 @@ const Footer = () => {
 
                 <div className="flex flex-col items-center text-center">
 
-                    <img src="/assets/img/k.png" alt="Logo" className="w-[14rem] mb-6" />
+                    <img src="/assets/img/logoName.png" alt="Logo" className="w-[14rem] mb-6" />
 
                     <p className="max-w-2xl text-slate-400 mb-10">
                         Hire skilled freelancers or find the right projects to grow your career.
