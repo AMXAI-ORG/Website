@@ -80,7 +80,7 @@ export default function HomeSection() {
 
                 <div className="macro-earth-container" ref={earthContainerRef}>
                     <img
-                        src="/assets/img/e.png"
+                        src="/assets/img/Planet.png"
                         alt="Low Earth Orbit Moving Arc"
                         className="real-earth-asset"
                         ref={earthImgRef}

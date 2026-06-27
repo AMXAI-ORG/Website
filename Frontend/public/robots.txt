@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /dashboard/
+Disallow: /private/
+Disallow: /*.zip$
+Disallow: /*.env$
+Allow: /

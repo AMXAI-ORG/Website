@@ -1,22 +1,20 @@
-/* ─── NAVBAR PREMIUM SEPARATE STYLING ─── */
 .amxai-navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 6%;
   height: 90px;
-  position: fixed; /* Screen ke top par hamesha stick rahega */
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   box-sizing: border-box;
   z-index: 100;
-  background-color: rgba(4, 2, 9, 0.75); /* Subtle transparent black fallback */
-  backdrop-filter: blur(20px); /* Premium Apple-style glass blur */
-  border-bottom: 1px solid rgba(168, 85, 247, 0.08); /* Clean thin glow border line */
+  background-color: rgba(4, 2, 9, 0.75);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(168, 85, 247, 0.08);
 }
 
-/* AMXAI Logo Typography */
 /* Logo Container */
 .amxai-logo {
   display: flex;
@@ -25,20 +23,21 @@
 }
 
 /* Logo Image */
-/* Logo Image */
 .amxai-logo-img {
-  height: 90px;        /* Increased from 50px to fit the 90px navbar better */
+  height: 90px;
   width: auto;
   display: block;
   object-fit: contain;
-  max-height: 100%;    /* Ensures it never overflows the container */
-  transform: scale(1.1); /* Optional: Slightly boosts the presence if the image asset has built-in transparent margins */
+  max-height: 100%;
+  transform: scale(1.1);
 }
+
 /* Nav Menu Items */
 .amxai-nav-links {
   display: flex;
   gap: 30px;
 }
+
 .amxai-nav-links a {
   color: #94a3b8;
   text-decoration: none;
@@ -47,11 +46,15 @@
   letter-spacing: 1.5px;
   text-transform: uppercase;
   transition: color 0.3s ease;
-  font-family: system-ui, -apple-system, sans-serif;
+  font-family:
+    system-ui,
+    -apple-system,
+    sans-serif;
 }
-.amxai-nav-links a:hover, 
+
+.amxai-nav-links a:hover,
 .amxai-nav-links a.active {
-  color: #ffffff; /* Active and hover link white glow */
+  color: #ffffff;
 }
 
 /* Get in Touch Button */
@@ -69,11 +72,15 @@
   gap: 8px;
   cursor: pointer;
   transition: all 0.3s ease;
-  font-family: system-ui, -apple-system, sans-serif;
+  font-family:
+    system-ui,
+    -apple-system,
+    sans-serif;
 }
+
 .amxai-touch-btn:hover {
   background: #a855f7;
   color: #040209;
   border-color: transparent;
-  box-shadow: 0 0 25px rgba(255, 255, 255, 0.2); /* Soft clean box shadow fill */
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.2);
 }
