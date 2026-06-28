@@ -24,7 +24,7 @@
 
 /* Logo Image */
 .amxai-logo-img {
-  height: 90px;
+  height: 2rem;
   width: auto;
   display: block;
   object-fit: contain;
@@ -83,4 +83,121 @@
   color: #040209;
   border-color: transparent;
   box-shadow: 0 0 25px rgba(255, 255, 255, 0.2);
+}
+
+/* ===== Mobile menu additions ===== */
+
+.amxai-hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 6px;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+  z-index: 200;
+}
+
+.amxai-hamburger span {
+  display: block;
+  height: 2px;
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 2px;
+  transition:
+    transform 0.35s ease,
+    opacity 0.25s ease;
+}
+
+.amxai-hamburger.open span:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+.amxai-hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+.amxai-hamburger.open span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+.amxai-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 140;
+  opacity: 0;
+  transition: opacity 0.35s ease;
+}
+
+.amxai-sidebar-logo {
+  display: none;
+  align-items: center;
+
+  img {
+    height: 3rem;
+  }
+
+  .logo-name {
+    height: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .amxai-hamburger {
+    display: flex;
+  }
+
+  .amxai-touch-btn {
+    display: none;
+  }
+
+  .amxai-nav-links {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 280px;
+    max-width: 80vw;
+    height: 100vh;
+    background-color: rgba(4, 2, 9, 0.97);
+    backdrop-filter: blur(20px);
+    border-right: 1px solid rgba(168, 85, 247, 0.15);
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 28px;
+    padding: 30px 28px;
+    transform: translateX(-100%);
+    transition: transform 0.4s ease;
+    z-index: 150;
+    box-sizing: border-box;
+  }
+
+  .amxai-nav-links.open {
+    transform: translateX(0);
+  }
+
+  .amxai-overlay.open {
+    display: block;
+    opacity: 1;
+  }
+}
+
+@media (min-width: 769px) {
+  .amxai-touch-btn-mobile {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .amxai-touch-btn-mobile {
+    display: flex;
+    margin-top: 10px;
+  }
+
+  .amxai-sidebar-logo {
+    display: flex;
+  }
 }

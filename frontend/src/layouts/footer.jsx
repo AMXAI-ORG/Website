@@ -1,17 +1,21 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Footer = () => {
+    const linkClass = ({ isActive }) =>
+        `transition-colors duration-200 hover:text-purple-400 ${isActive ? "text-purple-500 font-semibold" : "text-slate-300"
+    }`;
+
     return (
         <footer className="relative text-white bg-[url('/assets/img/worldMap.png')] bg-cover bg-center bg-no-repeat">
 
             {/* Overlay */}
             <div className="absolute inset-0 bg-slate-950/70"></div>
 
-            <div className="relative z-10 max-w-7xl mx-auto px-6 py-16">
+            <div className="relative z-10 max-w-7xl mx-auto px-6 pt-16 pb-5">
 
                 <div className="flex flex-col items-center text-center">
 
-                    <img src="/assets/img/logoName.png" alt="Logo" className="w-[14rem] mb-6" />
+                    <img src="/assets/img/logoName.png" alt="Logo" className="w-[14rem] mb-20" />
 
                     <p className="max-w-2xl text-slate-400 mb-10">
                         Hire skilled freelancers or find the right projects to grow your career.
@@ -19,7 +23,7 @@ const Footer = () => {
                     </p>
 
                     {/* Newsletter */}
-                    <div className="flex flex-col items-center text-center mb-16">
+                    <div className="flex flex-col items-center text-center mb-12">
                         <h2 className="text-3xl font-bold mb-4">
                             Subscribe to our Newsletter
                         </h2>
@@ -40,24 +44,24 @@ const Footer = () => {
                         </div>
                     </div>
 
-                    <div className="flex flex-wrap justify-center gap-6 text-sm mb-6">
-                        <Link to="/">Home</Link>
-                        <Link to="/about">About</Link>
-                        <Link to="/service">Service</Link>
-                        <Link to="/contact">Contact</Link>
+                    <div className="flex flex-wrap justify-center gap-6 text-sm mb-4">
+                        <NavLink to="/" className={linkClass}>Home</NavLink>
+                        <NavLink to="/about" className={linkClass}>About</NavLink>
+                        <NavLink to="/service" className={linkClass}>Service</NavLink>
+                        <NavLink to="/contact" className={linkClass}>Contact</NavLink>
                     </div>
 
                 </div>
 
-                <div className="border-t border-slate-800 my-6"></div>
+                <div className="border-t border-slate-800 my-5"></div>
 
                 <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-slate-400">
                     <p>© 2026 AMXAI. All Rights Reserved.</p>
 
                     <div className="flex items-center gap-6">
-                        <Link to="/policies">Privacy Policy</Link>
-                        <Link to="/terms">Terms of Use</Link>
-                        <Link to="/disclaimer">Disclaimer</Link>
+                        <NavLink to="/policies" className={linkClass}>Privacy Policy</NavLink>
+                        <NavLink to="/terms" className={linkClass}>Terms of Use</NavLink>
+                        <NavLink to="/disclaimer" className={linkClass}>Disclaimer</NavLink>
                     </div>
                 </div>
 
